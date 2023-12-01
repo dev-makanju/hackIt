@@ -12,7 +12,7 @@ This project aims to create an accessible and user-friendly dashboard that cater
 
 ## Getting Started
 
-1. Clone the repository: git clone https://github.com/your-username/sensible-dashboard.git
+1. Clone the repository: git clone https://github.com/dev-makanju/hackIt.git
 2. Open index.html in a modern web browser to view the accessible dashboard.
 
 Happy coding! 🚀
