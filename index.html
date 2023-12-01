@@ -1,0 +1,448 @@
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Shopify Admin</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+   <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <header class="flex justify-between align-items w-full gap-8">
+         <a role="link" href="http://shopify.com" target="_blanck">
+            <div class="logo-container">
+               <img src="https://crushingit.tech/hackathon-assets/shopify-icon-desktop.svg" alt="Shopify icon">
+               <span class="is-mobile">
+                  <svg width="40" height="40" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <g id="Shopify.com svg">
+                        <g id="Group">
+                           <g id="Group_2">
+                              <path id="Vector"
+                                 d="M21.2105 3.80402C21.2105 3.80402 20.8505 3.90683 20.259 4.08675C20.1561 3.75261 20.0018 3.36707 19.7961 2.95583C19.1274 1.67069 18.1245 0.976712 16.9415 0.976712C16.8644 0.976712 16.7872 0.976712 16.6843 1.00241C16.6586 0.951009 16.6072 0.925306 16.5815 0.8739C16.0671 0.308439 15.3985 0.0514104 14.6013 0.0771132C13.0583 0.128519 11.5152 1.23374 10.2808 3.21286C9.40646 4.60081 8.73782 6.3486 8.55781 7.71085C6.78334 8.25061 5.54893 8.63615 5.52321 8.66185C4.62312 8.94458 4.59741 8.97029 4.49454 9.81848C4.34024 10.461 2 28.5815 2 28.5815L21.442 31.9486V3.75262C21.3391 3.77832 21.2619 3.77832 21.2105 3.80402ZM16.7101 5.19197C15.6814 5.50041 14.5498 5.86025 13.444 6.19438C13.7526 4.98635 14.3698 3.77832 15.0899 2.98153C15.3728 2.6988 15.7585 2.36466 16.1957 2.15904C16.6329 3.08434 16.7358 4.34378 16.7101 5.19197ZM14.627 1.10523C14.987 1.10523 15.2956 1.18233 15.5528 1.33655C15.1413 1.54217 14.7299 1.87631 14.3441 2.26185C13.3669 3.31567 12.6211 4.96065 12.3125 6.52852C11.3867 6.81125 10.4609 7.09398 9.6122 7.35101C10.1523 4.90924 12.2353 1.18233 14.627 1.10523ZM11.6181 15.2418C11.721 16.8868 16.0671 17.2466 16.3243 21.1277C16.5043 24.1863 14.7041 26.2683 12.1067 26.4225C8.96928 26.6281 7.24625 24.7775 7.24625 24.7775L7.91488 21.9502C7.91488 21.9502 9.63792 23.261 11.0266 23.1582C11.9267 23.1068 12.261 22.3615 12.2353 21.8474C12.1067 19.6884 8.55781 19.8169 8.32635 16.2699C8.12062 13.3141 10.0751 10.3068 14.3955 10.0241C16.0671 9.92129 16.9158 10.3325 16.9158 10.3325L15.9386 14.0337C15.9386 14.0337 14.8327 13.5197 13.5212 13.6225C11.6181 13.751 11.5924 14.959 11.6181 15.2418ZM17.7387 4.88354C17.7387 4.11245 17.6359 3.00723 17.2758 2.08193C18.4588 2.31326 19.0246 3.6241 19.2817 4.42089C18.8188 4.5494 18.3045 4.70362 17.7387 4.88354Z"
+                                 fill="white" />
+                              <path id="Vector_2"
+                                 d="M22.085 31.8458L30.1601 29.841C30.1601 29.841 26.6883 6.3743 26.6626 6.22009C26.6369 6.06587 26.5083 5.96306 26.3797 5.96306C26.2511 5.96306 23.988 5.91165 23.988 5.91165C23.988 5.91165 22.5993 4.57511 22.085 4.06105V31.8458Z"
+                                 fill="white" />
+                           </g>
+                        </g>
+                     </g>
+                  </svg>
+               </span>
+            </div>
+         </a>
+         <div id="search" class="search__container flex align-items">
+            <label for="search" class="sr-only">Search:</label>
+            <span class="icon" type="button" aria-label="Submit search">
+               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 13 14" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                     d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z"
+                     fill="#B5B5B5" />
+               </svg>
+            </span>
+            <input type="text" id="search" name="search" aria-label="Search" placeholder="Search"
+               onfocus="handleSearchFocus()" onblur="handleBlur()" oninput="handleSearch()">
+         </div>
+
+         <div class="flex flex-col menu-container">
+            <div class="flex align-items gap-14">
+               <button 
+                  onclick="handleNotificationMenu()"
+                  class="notification-bell header_box c-pointer flex align-items justify-center" type="button"
+                  aria-label="Notifications"
+                  aria-haspopup="true" 
+                  aria-expanded="false" 
+                  aria-controls="notification-menu-list">
+                  <svg width="20" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.75203 14.4239L5.3061 14.1427C3.45144 13.9295 2.92542 11.4844 4.52838 10.5274L4.5933 10.4886C5.466 9.96761 6.00045 9.02609 6.00045 8.00969V7.5C6.00045 5.01472 8.01517 3 10.5005 3C12.9857 3 15.0005 5.01472 15.0005 7.5V8.00969C15.0005 9.02609 15.5349 9.96761 16.4076 10.4886L16.4725 10.5274C18.0755 11.4844 17.5495 13.9295 15.6948 14.1427L13.152 14.435V14.8C13.152 16.2912 11.9432 17.5 10.452 17.5C8.96086 17.5 7.75203 16.2912 7.75203 14.8V14.4239ZM11.652 14.5H9.25203V14.8C9.25203 15.4627 9.78929 16 10.452 16C11.1148 16 11.652 15.4627 11.652 14.8V14.5ZM8.50045 13H12.5005L15.5235 12.6525C15.953 12.6032 16.0748 12.0369 15.7036 11.8153L15.6387 11.7766C15.5591 11.7291 15.4815 11.6793 15.4057 11.6273C15.2506 11.521 15.1036 11.4055 14.9651 11.2818C14.9405 11.2598 14.9162 11.2377 14.8922 11.2152C14.0144 10.395 13.5005 9.23833 13.5005 8.00969V7.5C13.5005 5.84315 12.1573 4.5 10.5005 4.5C8.8436 4.5 7.50045 5.84315 7.50045 7.5V8.00969C7.50045 9.23833 6.98651 10.395 6.10871 11.2152C6.08469 11.2377 6.06039 11.2598 6.03583 11.2818C5.89734 11.4055 5.75029 11.521 5.59523 11.6273C5.51945 11.6793 5.44176 11.7291 5.36222 11.7766L5.29729 11.8153C4.9261 12.0369 5.0479 12.6032 5.47739 12.6525L8.50045 13Z"
+                        fill="#fff" />
+                  </svg>
+               </button>
+               <button id="user-menu" aria-haspopup="true" aria-expanded="false" aria-controls="user-menu-list"
+                  onclick="handleUserMenu()" class="user-nav-info c-pointer flex justify-between align-items gap-6">
+                  <div class="user-name align-self">
+                     <p id="user-menu-name" class="light-font-color font-mid-small">David Collections</p>
+                  </div>
+                  <div aria-label="initials" class="initials flex align-items justify-center">
+                     <p>DG</p>
+                  </div>
+               </button>
+            </div>         
+
+            <div role="userinfo" aria-label="User information" class="user-actions">
+               <ul class="noticication-menu-list" role="menu" id="notification-menu-list" aria-labelledby="notification-menu-list">
+                  <li class="flex align-items justify-between">
+                     <h2 class="mid-font-color">Alerts</h2>
+                     <div class="flex align-items gap-8">   
+                        <button role="menudata" class="btn flex align-items gap-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H16.25C16.6642 5.25 17 5.58579 17 6C17 6.41421 16.6642 6.75 16.25 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z" fill="#3030309f"/>
+                              <path d="M6.75 14C6.75 13.5858 7.08579 13.25 7.5 13.25H12.5C12.9142 13.25 13.25 13.5858 13.25 14C13.25 14.4142 12.9142 14.75 12.5 14.75H7.5C7.08579 14.75 6.75 14.4142 6.75 14Z" fill="#3030309f"/>
+                              <path d="M5.5 9.25C5.08579 9.25 4.75 9.58579 4.75 10C4.75 10.4142 5.08579 10.75 5.5 10.75H14.5C14.9142 10.75 15.25 10.4142 15.25 10C15.25 9.58579 14.9142 9.25 14.5 9.25H5.5Z" fill="#3030309f"/>
+                           </svg>
+                        </button>
+                        <button role="menudata" class="btn flex align-items gap-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                              <path d="M13.2803 9.03033C13.5732 8.73744 13.5732 8.26256 13.2803 7.96967C12.9874 7.67678 12.5126 7.67678 12.2197 7.96967L9.25 10.9393L8.03033 9.71967C7.73744 9.42678 7.26256 9.42678 6.96967 9.71967C6.67678 10.0126 6.67678 10.4874 6.96967 10.7803L8.71967 12.5303C9.01256 12.8232 9.48744 12.8232 9.78033 12.5303L13.2803 9.03033Z" fill="#3030309f"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.5 10C15.5 13.0376 13.0376 15.5 10 15.5C6.96243 15.5 4.5 13.0376 4.5 10C4.5 6.96243 6.96243 4.5 10 4.5C13.0376 4.5 15.5 6.96243 15.5 10Z" fill="#3030309f"/>
+                           </svg>
+                        </button>
+                     </div>
+                  </li>
+                  <div class="w-full not-text-wrapper flex">
+                     <p class="font-bold">Alert about your store and account will show here</p>
+                  </div>
+               </ul>
+               <ul class="user-menu-list" role="menu" id="user-menu-list" aria-labelledby="user-menu-name">
+                  <div class="user-menu-data flex justify-between align-items gap-6">
+                     <div class="flex gap-6">
+                        <div aria-label="menu-initials" class="menu-initials flex align-items justify-center">
+                           <p class="font-small">DG</p>
+                        </div>
+                        <div class="user-name align-self">
+                           <p class="font-nid-small font-bold font-mid-small">David Collections</p>
+                        </div>
+                     </div>
+                     <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <circle cx="12" cy="12" r="10" fill="#F1F1F1"></circle>
+                           <path
+                              d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                              fill="#616161"></path>
+                        </svg>
+                     </span>
+                  </div>
+                  <li>
+                     <button role="menuitem" class="btn flex align-items gap-6">
+                        <span>
+                           <svg width="24" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd"
+                                 d="M13.757 3H7.24302C6.85944 3 6.4971 3.17611 6.26012 3.47772L3.87394 6.51468C3.63169 6.823 3.5 7.20375 3.5 7.59586V8.25C3.5 9.31867 4.10958 10.245 5 10.7001V15.25C5 16.2165 5.7835 17 6.75 17H14.25C15.2165 17 16 16.2165 16 15.25V10.7001C16.8904 10.245 17.5 9.31867 17.5 8.25V7.76879C17.5 7.26465 17.3307 6.77511 17.0192 6.3787L14.7399 3.47772C14.5029 3.17611 14.1406 3 13.757 3ZM13.5 15.5H14.25C14.3881 15.5 14.5 15.3881 14.5 15.25V11C13.712 11 13.0014 10.6686 12.5 10.1375C11.9986 10.6686 11.288 11 10.5 11C9.71199 11 9.00138 10.6686 8.5 10.1375C7.99862 10.6686 7.28801 11 6.5 11V15.25C6.5 15.3881 6.61193 15.5 6.75 15.5H10.5V13C10.5 12.4477 10.9477 12 11.5 12H12.5C13.0523 12 13.5 12.4477 13.5 13V15.5ZM6.5 9.5H6.25C5.55964 9.5 5 8.94036 5 8.25V7.59586C5 7.53985 5.01881 7.48545 5.05342 7.44141L7.36453 4.5H13.6355L15.8397 7.30543C15.9436 7.43757 16 7.60075 16 7.76879V8.25C16 8.94036 15.4404 9.5 14.75 9.5H14.5C13.8096 9.5 13.25 8.94036 13.25 8.25V7.75C13.25 7.33579 12.9142 7 12.5 7C12.0858 7 11.75 7.33579 11.75 7.75V8.25C11.75 8.94036 11.1904 9.5 10.5 9.5C9.80964 9.5 9.25 8.94036 9.25 8.25V7.75C9.25 7.33579 8.91421 7 8.5 7C8.08579 7 7.75 7.33579 7.75 7.75V8.25C7.75 8.94036 7.19036 9.5 6.5 9.5Z"
+                                 fill="#616161" />
+                           </svg>
+                        </span>
+                        <p class="mid-font-color">All store</p>
+                     </button>
+                  </li>
+                  <div class="menu-dividers"/>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Help Center</button>
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Change Logs</button>
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Comminuty Forum</button>
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Hire a Shopify Partner</button>                        
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Keyboard shortcuts</button>
+                     </a>
+                  </li>
+                  <div class="menu-dividers"></div>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn flex flex-col gap-6">
+                           <h1 class="font-semi-small mid-font-color">David Micheal</h1>
+                           <small class="mid-font-color">davidmicheal@gmail.com</small>
+                        </button>
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Manage account</button>
+                     </a>
+                  </li>
+                  <li>
+                     <a role="link" class="default_link" href="https://admin.shopify.com" target="_blanck">
+                        <button role="menuitem" class="btn mid-font-color">Log out</button>
+                     </a>
+                  </li>
+               </ul>
+            </div>   
+         </div>
+   </header>
+
+   <main class="flex flex-col gap-14 mt-1">
+      <div id="modal-overlay">
+         <div 
+            class="flex justify-between align-items dialog" 
+            id="modal" 
+            role="dialog" 
+            aria-modal="true"
+            aria-describedby="selectModalDescription"
+            >
+            <h2 class="light-font-color font-mid-small" id="selectModalDescription">
+               Extend your trial for $1/month for 3 months on
+               select plans.</h2>
+            <div aria-labelledby="selectActions" class="flex justify-between gap-10 align-items">
+               <button role="actionItem" aria-controls="modal" class="select-btn" onclick="closeModal()">
+                  <a role="link" class="default_link mid-font-color" href="https://shopify.com/pricing" target="_blanck">
+                     Select a plan
+                  </a>
+               </button>
+               <button aria-label="Close" id="selectActions" class="btn light-font-color" onclick="closeModal()">x</button>
+            </div>
+         </div>
+      </div>
+
+      <div id="setup-guide" role="accordion" aria-describedby="storeDescription" aria-labelledby="storeSetup" aria-hidden="true">
+         <div class="accordion-section flex flex-col gap-14">
+            <div class="flex justify-between align-center">
+               <div>
+                  <h4 id="storeSetup">Setup guide</h4>
+                  <small id="storeDescription" class="mid-font-color">Use this personalize guide to get your store up and runing</small>
+               </div>
+               <button onclick="handleAcordionMenuDropdown()" id="open-nav"  arial-label="Open" class="btn accordion-dropdown c-pointer">
+                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.21967 8.46967C6.51256 8.17678 6.98744 8.17678 7.28033 8.46967L10.75 11.9393L14.2197 8.46967C14.5126 8.17678 14.9874 8.17678 15.2803 8.46967C15.5732 8.76256 15.5732 9.23744 15.2803 9.53033L11.2803 13.5303C10.9874 13.8232 10.5126 13.8232 10.2197 13.5303L6.21967 9.53033C5.92678 9.23744 5.92678 8.76256 6.21967 8.46967Z"
+                        fill="#000" />
+                  </svg>
+               </button>
+            </div>
+            <div class="progress-bar flex align-items gap-8">
+               <p class="mid-font-color">1/5 completed</p>
+               <div class="tracker-container">
+                  <div id="tracker" class="tracker"></div>
+               </div>
+            </div>
+            <!-- main content -->
+            <div id="remove-onclick">
+               <div 
+               class="accordion-wrapper flex gap-8 flex-col" 
+               id="customize-store" 
+               role="accordionItem" 
+               aria-labelledby="customize-store" 
+            >
+               <div class="flex align-items gap-14">
+                  <button onclick="handleCompletedChecks('1')" aria-checked="false" aria-controls="customize-store" class="btn">
+                     <svg id="uncheck" class="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#616161" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                     </svg>
+                     <svg id="check" class="uncheck" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                        <path
+                          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                  </button>
+                  <button 
+                     onclick="handleAccordionMenu('1')"
+                     aria-expanded="false"
+                     aria-controls="customize-store"
+                     class="btn font-mid-small font-bold mid-font-color"
+                  >
+                     Customize your online store
+                  </button>
+               </div>
+               <div class="flex justify-between align-items is-acc-active">
+                  <div class="flex flex-col gap-8">
+                     <p class="font-semi-small mid-font-color" 
+                        id="customize-desc">Choose a theme and add your logo, colors, and images to reflect your brand</p>
+                     <a role="link" class="accordion-link" href="">Learn more</a>
+                     <button class="btn btn-primary light-font-color">
+                        Customize theme
+                     </button>
+                  </div>
+                  <div>
+                     <img src="https://crushingit.tech/hackathon-assets/customise-store.png" alt="customize Image">
+                  </div>
+               </div>
+            </div>
+            <div 
+               class="accordion-wrapper flex gap-8 flex-col" 
+               id="add-product" 
+               role="accordionItem" 
+               aria-labelledby="add-product" 
+            >
+               <div class="flex align-items gap-14">
+                  <button onclick="handleCompletedChecks('2')" aria-checked="false" aria-controls="add-product" class="btn">
+                     <svg id="uncheck" class="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#616161" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                     </svg>
+                     <svg id="check" class="uncheck" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                        <path
+                          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                  </button>
+                  <button 
+                     aria-controls="add-product"
+                     aria-expanded="false"
+                     class="btn font-mid-small font-bold mid-font-color"
+                     onclick="handleAccordionMenu('2')"
+                  >
+                     Add your first product
+                  </button>
+               </div>
+               <div class="flex justify-between align-items is-acc-active">
+                  <div class="flex flex-col gap-8">
+                     <p class="font-semi-small mid-font-color" 
+                        id="product-desc">Write a description, add photos, and set pricing for the products you plan to sell</p>
+                     <a role="link" class="accordion-link" href="">Learn more</a>
+                     <div class="flex flex-row gap-14">
+                        <button class="btn btn-primary light-font-color">
+                           Add product
+                        </button>
+                        <button class="btn mid-font-color">
+                           Import product
+                        </button>
+                     </div>
+                  </div>
+                  <div>
+                     <img src="https://crushingit.tech/hackathon-assets/product.png" alt="Add product image">
+                  </div>
+               </div>
+            </div>
+            <div 
+               class="accordion-wrapper flex gap-8 flex-col" 
+               id="custom-domain" 
+               role="accordionItem" 
+               aria-labelledby="custom-domain" 
+            >
+               <div class="flex align-items gap-14">
+                  <button onclick="handleCompletedChecks('3')" aria-checked="false" aria-controls="custom-domain" class="btn">
+                     <svg id="uncheck" class="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#616161" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                     </svg>
+                     <svg id="check" class="uncheck" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                        <path
+                          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                  </button>
+                  <button 
+                     onclick="handleAccordionMenu('3')" 
+                     aria-expanded="false"
+                     aria-controls="custom-domain"
+                     class="btn font-mid-small font-bold mid-font-color"
+                  >
+                     Add a custom domain
+                  </button>
+               </div>
+               <div class="flex justify-between align-items is-acc-active">
+                  <div class="flex flex-col gap-8">
+                     <p class="font-semi-small mid-font-color" 
+                        id="customize-desc">Your custom domain is 222219.myshopify.com but you can add a custom domain to help customers find your online store</p>
+                     <a role="link" class="accordion-link" href="">Learn more</a>
+                     <button class="btn btn-primary light-font-color">
+                        Add domain
+                     </button>
+                  </div>
+                  <div>
+                     <img src="https://crushingit.tech/hackathon-assets/website.png" alt="custom domain Image">
+                  </div>
+               </div>
+            </div>
+            <div 
+               class="accordion-wrapper flex gap-8 flex-col" 
+               id="name-store" 
+               role="accordionItem" 
+               aria-labelledby="name-store" 
+            >
+               <div class="flex align-items gap-14">
+                  <button onclick="handleCompletedChecks('4')" aria-checked="false" aria-controls="name-store" class="btn">
+                     <svg id="uncheck" class="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#616161" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                     </svg>
+                     <svg id="check" class="uncheck" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                        <path
+                          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                  </button>
+                  <button 
+                     onclick="handleAccordionMenu('4')"
+                     aria-controls="name-store"
+                     aria-expanded="false"
+                     class="btn font-mid-small font-bold mid-font-color"
+                  >
+                     Name Your store   
+                  </button>
+               </div>
+               <div class="flex justify-between align-items is-acc-active">
+                  <div class="flex flex-col gap-8">
+                     <p class="font-semi-small mid-font-color" 
+                        id="customize-desc">Your temporary store name is currently davii collections. The store name appears in your admin and your online store</p>
+                     <a role="link" class="accordion-link" href="">Learn more</a>
+                     <button class="btn btn-primary light-font-color">
+                        Name store
+                     </button>
+                  </div>
+                  <div>
+                     <img src="https://crushingit.tech/hackathon-assets/name-store.png" alt="Name store Image">
+                  </div>
+               </div>
+            </div>
+            <div 
+               class="accordion-wrapper flex gap-8 flex-col" 
+               id="setup-payment" 
+               role="accordionItem" 
+               aria-labelledby="setup-payment" 
+            >
+               <div class="flex align-items gap-14" id="">
+                  <button onclick="handleCompletedChecks('5')" aria-checked="false" aria-controls="setup-payment" class="btn">
+                     <svg id="uncheck" class="check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="16" r="12" stroke="#616161" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="4 6" />
+                     </svg>
+                     <svg id="check" class="uncheck" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" fill="#303030"></circle>
+                        <path
+                          d="M17.2738 8.52629C17.6643 8.91682 17.6643 9.54998 17.2738 9.94051L11.4405 15.7738C11.05 16.1644 10.4168 16.1644 10.0263 15.7738L7.3596 13.1072C6.96908 12.7166 6.96908 12.0835 7.3596 11.693C7.75013 11.3024 8.38329 11.3024 8.77382 11.693L10.7334 13.6525L15.8596 8.52629C16.2501 8.13577 16.8833 8.13577 17.2738 8.52629Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                  </button>
+                  <button 
+                     onclick="handleAccordionMenu('5')"
+                     aria-controls="setup-payment"
+                     aria-expanded="false"
+                     class="btn font-mid-small font-bold mid-font-color"
+                  >
+                     Set up payment provider
+                  </button>
+               </div>
+               <div class="flex justify-between align-items is-acc-active">
+                  <div class="flex flex-col gap-8">
+                     <p class="font-semi-small mid-font-color" 
+                        id="customize-desc">Choose a payment provider to start accepting. You will need to create an acount with the payment provider and set it up with your shopify store</p>
+                     <a role="link" class="accordion-link" href="">Learn more</a>
+                     <button class="btn btn-primary light-font-color">
+                        set up payment
+                     </button>
+                  </div>
+                  <div>
+                     <img src="https://crushingit.tech/hackathon-assets/payment.png" alt="Setup Payment">
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+   </main>
+   <script src="./app.js"></script>
+</body>
+
+</html>
